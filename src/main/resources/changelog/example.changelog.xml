@@ -93,4 +93,15 @@
         <dropTable tableName="tb_example"/>
     </changeSet>
     
+	<changeSet author="Tent" id="insert_tb_department_category_20180205">
+		<preConditions onFail="MARK_RAN">
+		    <tableExists tableName="tb_department_category" />
+		</preConditions>
+		<comment>เพิ่มข้อมูล tb_department_category</comment>
+	    <sql>
+	    INSERT INTO `tb_department_category` (`id`, `department_category_code`, `department_category_name_TH`, `department_category_name_EN`, `level`, `active_flag`, `department_category_parent`, `create_date`, `create_by`, `update_date`, `update_by`) VALUES (NULL, 'COMP0001', 'แฮนดีวิง1', 'Handy Wing1', '0', 'Y', '0', CURRENT_TIMESTAMP, 'System', CURRENT_TIMESTAMP, 'System');
+	    INSERT INTO `tb_department_category` (`id`, `department_category_code`, `department_category_name_TH`, `department_category_name_EN`, `level`, `active_flag`, `department_category_parent`, `create_date`, `create_by`, `update_date`, `update_by`) VALUES (NULL, 'COMP0002', 'แฮนดีวิง2', 'Handy Wing2', '0', 'Y', '0', CURRENT_TIMESTAMP, 'System', CURRENT_TIMESTAMP, 'System');
+	    </sql>
+	</changeSet>
+	
 </databaseChangeLog>

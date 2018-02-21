@@ -59,7 +59,7 @@ body {
 
 .grid {
   text-align: center;
-/*   position: fixed; */
+  position: fixed;
   margin-left: auto;
   margin-right: auto;
   width: 90%;

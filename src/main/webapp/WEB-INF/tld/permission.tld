@@ -7,7 +7,7 @@
 	<uri>/WEB-INF/tld/permission.tld</uri>
 	<tag>
 		<name>permission</name>
-		<tag-class>com.hdw.foodsci.security.Permission</tag-class>
+		<tag-class>com.hdw.tutorial.security.Permission</tag-class>
 		<body-content>JSP</body-content>
 		<attribute>
 			<name>object</name>
